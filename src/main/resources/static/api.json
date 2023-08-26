@@ -1,0 +1,133 @@
+{
+    "requests": [
+        {
+            "endpoint": "http://localhost:8081/clientes",
+            "auth": {
+                "authActive": true,
+                "authType": "none"
+            },
+            "method": "GET",
+            "headers": [],
+            "name": "Api Test",
+            "v": "1",
+            "params": [],
+            "body": {
+                "contentType": null,
+                "body": null
+            },
+            "preRequestScript": "",
+            "testScript": ""
+        },
+        {
+            "params": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "method": "POST",
+            "v": "1",
+            "name": "ApiTest - POst",
+            "endpoint": "http://localhost:8081/clientes/nuevo",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "headers": [],
+            "body": {
+                "body": "{\n    \"nombres\": \"Favio Gabriel\",\n    \"apellidos\": \"Munayco\",\n    \"razonsocial\": \"Oak System\",\n    \"correo\": \"favio@gmail.com\",\n    \"telefono\": \"949358892\",\n    \"tipoidentificacion\": 1,\n\t\"identificacion\": \"71852237\"\n}",
+                "contentType": "application/json"
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8081/clientes/updatecliente",
+            "name": "UpdateCliente",
+            "params": [],
+            "headers": [],
+            "method": "POST",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+                "contentType": "application/json",
+                "body": "{\n  \"id\": 1,\n  \"nombres\": \"Favio\",\n  \"apellidos\": \"Moyano\",\n  \"razonsocial\": \"Oak System\",\n  \"correo\": \"favio@gmail.com\",\n  \"telefono\": \"949358892\",\n  \"tipoidentificacion\": 1,\n  \"identificacion\": \"71852237\"\n}"
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8081/producto",
+            "name": "ObtenerProductos",
+            "params": [],
+            "headers": [],
+            "method": "GET",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+                "contentType": null,
+                "body": null
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8081/producto/nuevo",
+            "name": "Nuevo Producto",
+            "params": [],
+            "headers": [],
+            "method": "POST",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+                "contentType": "application/json",
+                "body": "{\n  \t\"descripcion\": \"Modelo 2\",\n    \"presentacion\": \"Caja 2\",\n    \"preciocompra\": 10.0,\n\t\"proveedor\": \"Hp\"\n}"
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8081/producto/delete/2",
+            "name": "Eliminar",
+            "params": [],
+            "headers": [],
+            "method": "POST",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+                "contentType": "application/json",
+                "body": "{\n  \"id\":1\n}"
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://127.0.0.1:8081/producto/3",
+            "name": "Obtener 1 producto",
+            "params": [],
+            "headers": [],
+            "method": "GET",
+            "auth": {
+                "authType": "none",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+                "contentType": null,
+                "body": null
+            }
+        }
+    ],
+    "v": 1,
+    "folders": [],
+    "name": "Apis"
+}
